@@ -2,8 +2,10 @@
   "name": "communication",
   "version": "1.0.0",
   "description": "",
-  "main": "server.js",
+  "main": "src/server.js",
   "scripts": {
+    "prebuild": "tslint -c tslint.json -p tsconfig.json --fix",
+    "build": "tsc",
     "start": "node server",
     "dev": "nodemon server"
   },
