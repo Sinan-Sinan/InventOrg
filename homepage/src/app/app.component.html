@@ -1,1 +1,46 @@
-<router-outlet></router-outlet>
+<!--navigation bar-->
+<div class="navbar">
+    <!--logo which brings user to dashboard-->
+    <a id="logo" style="float:left;" routerLink="/dashboard"><img src="Logo.PNG" alt="bees!!" width="100px" height="100px"></a>
+
+    <!--navigation to other components-->
+    <ul class="navbtn">
+        <li><a routerLink="/inventory">Inventory</a></li>
+        <li><a routerLink="/message">Message</a></li>
+    </ul>
+
+    <!--user which brings user to settings/log out etc-->
+    <a id="user" style="float:right;" routerLink="/user"><img src="https://cdn1.iconfinder.com/data/icons/business-users/512/circle-512.png" alt="usericon" width="75px" height="75px"></a>
+</div> <!--end of top navigation bar-->
+
+<!--code from other components, inbetween navbar and footer-->
+<div class="main">
+  <router-outlet></router-outlet>
+</div>
+
+<!--footer underneath component container-->
+<footer>
+  <!--used for footer columns-->
+  <div class="foot">
+    <h6>START A PROJECT<br>We are ready for the challenge<br>sales@inventorg.com</h6>
+  </div>
+
+  <div class="foot">
+    <h6>SAY HELLO<br>497 Evergreen Rd. Roseville, CA 95673<br>+44 345 678 903</h6>
+  </div>
+
+  <div class="foot">
+    <h6>QUESTIONS<br>We are happy to answer questions<br>help@inventorg.com</h6>
+  </div><!--end of footer columns-->
+
+  <!--social media links-->
+  <div class="social">
+    <a style="margin-bottom: 20px" href="https://instagram.com"><img src="https://www.transparentpng.com/thumb/logo-instagram/5UpXLo-logo-instagram-png-clipart-photo.png" alt="insta" width="30px" height="30px"></a>
+    <a href="hhtps://twitter.com"><img src="https://i1.wp.com/www.vectorico.com/wp-content/uploads/2018/02/Twitter-Logo-Blue.png?resize=300%2C300" alt="twitter" width="50px" height="50px"></a>
+    <a  href="https://facebook.com"><img src="https://i.ya-webdesign.com/images/transparent-f-logo-facebook-7.png" alt="facebook" width="50px" height="50px"></a>
+  </div>
+
+  <br><br><br><br>
+  <h4 style="text-align: center;">InventOrg</h4>
+</footer>
+
